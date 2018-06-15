@@ -38,6 +38,14 @@ Pizza.prototype.getPrice = function() {
 $(document).ready(function() {
     $(".makeOrder").submit(function(event) {
         event.preventDefault();
-        var pizzaOrder = new Pizza("input[name='size']:checked").val();
+        var sizeofPizza = $("input:radio[name='size']:checked").val();
+        var toppingsOfPizza = [];
+        $("input:checkbox[name='toppings']:checked").each(function(){
+            var individualToppings = $(this).val();
+            toppingsOfPizza.push(individualToppings);
+          });
+        var pizzaOrder = new Pizza(sizeofPizza, toppingsOfPizza)
+        console.log(pizzaOrder);
+        
     })
 });
