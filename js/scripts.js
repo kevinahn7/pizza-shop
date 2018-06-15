@@ -50,8 +50,10 @@ Pizza.prototype.getToppingsPhrase = function() {
         var phrase = firstToppingsBeforeAnd + firstToppingsLastOneBeforeAnd + " and " + lastTopping;
         return phrase;
     } 
-    else {
+    else if (this.toppings.length === 1) {
         return this.toppings;
+    } else {
+        return "absolutely nothing on it"
     }
 }
 
@@ -59,6 +61,7 @@ Pizza.prototype.getToppingsPhrase = function() {
 $(document).ready(function() {
     $(".makeOrder").submit(function(event) {
         event.preventDefault();
+        $(".photo").show();
         var sizeofPizza = $("input:radio[name='size']:checked").val();
         var toppingsOfPizza = [];
         $("input:checkbox[name='toppings']:checked").each(function(){
@@ -68,6 +71,7 @@ $(document).ready(function() {
         var pizzaOrder = new Pizza(sizeofPizza, toppingsOfPizza)
         var finalPrice = pizzaOrder.getPrice();
         var toppingsPhrase = pizzaOrder.getToppingsPhrase();
-        $(".results").text("Your " + pizzaOrder.size + " pizza with " + toppingsPhrase + " will be $" + finalPrice + " dollars total.");
+        $(".results").text("Your " + pizzaOrder.size + " pizza with " + toppingsPhrase + " will be $" + finalPrice + " dollars total. Don't worry, they are already on their way!");
+
     })
 });
