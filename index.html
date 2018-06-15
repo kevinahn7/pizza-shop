@@ -10,11 +10,12 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Kevin's Pizza Shop</h1>
+            <h1 class="heading">Kevin's Pizza Shop</h1>
         </header>
         <main> 
             <h3>Pick your size and your toppings to order your pizza!</h3>
@@ -22,44 +23,75 @@
 
                 <div class="btn-group" data-toggle="buttons">
                     </label>
-                    <label class="btn btn-primary">
+                    <label class="btn btn-primary btn-lg">
                     <input type="radio" name="size" value="small" autocomplete="off" required> Small - 10 inches
                     </label>
-                    <label class="btn btn-primary">
+                    <label class="btn btn-primary btn-lg">
                     <input type="radio" name="size" value="medium" autocomplete="off" required> Medium - 14 inches
                     </label>
-                    <label class="btn btn-primary">
+                    <label class="btn btn-primary btn-lg">
                     <input type="radio" name="size" value="large" autocomplete="off" required> Large - 17 inches
                     </label>
                 </div>
-
-                
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary">
-                        <input type="checkbox" name="toppings" value="pepperoni" autocomplete="off"> Pepperoni
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="checkbox" name="toppings" value="chicken" autocomplete="off"> Chicken
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="checkbox" name="toppings" value="ham" autocomplete="off"> Ham
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="checkbox" name="toppings" value="sweet-potatoes" autocomplete="off"> Sweet Potatoes
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="checkbox" name="toppings" value="salmon" autocomplete="off"> Salmon
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="checkbox" name="toppings" value="pineapples" autocomplete="off"> Pineapple
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="checkbox" name="toppings" value="olives" autocomplete="off"> Olives
-                    </label>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <div class="theToppings">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-info">
+                                    <input type="checkbox" name="toppings" value="pepperoni" autocomplete="off"> Pepperoni
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="checkbox" name="toppings" value="chicken" autocomplete="off"> Chicken
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="checkbox" name="toppings" value="ham" autocomplete="off"> Ham
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="checkbox" name="toppings" value="sweet potatoes" autocomplete="off"> Sweet Potatoes
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="checkbox" name="toppings" value="salmon" autocomplete="off"> Salmon
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="checkbox" name="toppings" value="pineapples" autocomplete="off"> Pineapple
+                                </label>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-info">
+                                <input type="checkbox" name="toppings" value="olives" autocomplete="off"> Olives
+                            </label>
+                            <label class="btn btn-info">
+                                <input type="checkbox" name="toppings" value="eel" autocomplete="off"> Eel
+                            </label>
+                            <label class="btn btn-info">
+                                <input type="checkbox" name="toppings" value="tomatoes" autocomplete="off"> Tomatoes
+                            </label>
+                            <label class="btn btn-info">
+                                <input type="checkbox" name="toppings" value="vermicelli" autocomplete="off"> Vermicelli
+                            </label>
+                            <label class="btn btn-info">
+                                <input type="checkbox" name="toppings" value="meatloaf" autocomplete="off"> Meatloaf
+                            </label>
+                            <label class="btn btn-info">
+                                <input type="checkbox" name="toppings" value="sugar" autocomplete="off"> Sugar
+                            </label>
+                            <label class="btn btn-info">
+                                <input type="checkbox" name="toppings" value="mystery meat" autocomplete="off"> Mystery Meat
+                            </label>
+                        </div>
+                    </div>    
                 </div>
 
-                <input type="submit" class="btn btn-block btn-success" value="Place Order">
+                <input type="submit" class="btn btn-success resize" value="Place Order">
             </form>
+            <div class="again">
+                <a href="index.html"><button class="orderAgain">Click here to order another great pizza!</button></a>
+            </div>
             <div class ="results"> 
                 
             </div>

@@ -1,9 +1,50 @@
+html {
+    height: 100%;
+}
+body {
+    text-align: center;
+    height: 100%;
+    background-image: url("../img/pizza-background.jpg");
+}
+
+header {
+    font-family: 'Indie Flower', cursive;
+}
+
+.heading {
+    padding: 30px;
+    border-bottom: 2px gray dotted;
+}
+
+.container {
+    height: 100%;
+    background: white;
+}
+
+.theToppings div label {
+    margin-bottom: 0;
+}
+
 .photo {
     display: none;
+    margin: 20px;
 }
 
 .thePhoto {
     border-radius: 50%;
     width: 300px;
     height: 300px;
+}
+
+.resize {
+    width: 50%;
+}
+
+.again {
+    display: none;
+}
+
+.results {
+    margin-top: 50px;
+    font-size: 2em;
 }

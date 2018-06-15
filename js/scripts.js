@@ -19,7 +19,7 @@ function convertSizeToPrice(size) {
 function getPriceOfToppings(toppings) {
     var total = 0;
     toppings.forEach(topping => {
-        if (topping === "sweet-potatoes" || topping === "salmon") {
+        if (topping === "sweet potatoes" || topping === "salmon") {
             total += 5;
         } else if (topping === "ham" || topping === "pineapple") {
             total += 4;
@@ -62,6 +62,7 @@ $(document).ready(function() {
     $(".makeOrder").submit(function(event) {
         event.preventDefault();
         $(".photo").show();
+        $(".again").show();
         var sizeofPizza = $("input:radio[name='size']:checked").val();
         var toppingsOfPizza = [];
         $("input:checkbox[name='toppings']:checked").each(function(){
@@ -71,7 +72,7 @@ $(document).ready(function() {
         var pizzaOrder = new Pizza(sizeofPizza, toppingsOfPizza)
         var finalPrice = pizzaOrder.getPrice();
         var toppingsPhrase = pizzaOrder.getToppingsPhrase();
-        $(".results").text("Your " + pizzaOrder.size + " pizza with " + toppingsPhrase + " will be $" + finalPrice + " dollars total. Don't worry, they are already on their way!");
+        $(".results").text("Your " + pizzaOrder.size + " pizza with " + toppingsPhrase + " will be only $" + finalPrice + " dollars total. Don't worry, we are already on our way!");
 
     })
 });
