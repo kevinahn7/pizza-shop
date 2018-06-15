@@ -73,6 +73,6 @@ $(document).ready(function() {
         var pizzaOrder = new Pizza(sizeofPizza, toppingsOfPizza)
         var finalPrice = pizzaOrder.getPrice();
         var toppingsPhrase = pizzaOrder.getToppingsPhrase();
-        $(".results").text("Your " + pizzaOrder.size + " pizza with " + toppingsPhrase + " will be only $" + finalPrice + " dollars total. Don't worry, we already billed your card and are already on our way!");
+        $(".results").text("Your " + pizzaOrder.size + " pizza topped with " + toppingsPhrase + " will be only $" + finalPrice + " dollars total. Don't worry, we already billed your card and are already on our way!");
     })
 });
