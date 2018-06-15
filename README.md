@@ -14,7 +14,7 @@ A website created with JavaScript, HTML and CSS where a user can an order for a 
 | :-------------     | :------------- | :------------- |
 | Choose a size from small. medium and large | Large | {size: large} |
 | Choose different toppings | Olives, sausage and sweet potatoes | {toppings: ["olives", "sausage", "sweet-potatoes"]} |
-| Returns a final price of final cost | Small pizza with pepperoni and mushrooms | $16 |
+| Returns a final price of final cost | Small pizza with pepperoni and mushrooms | $13 |
 
 
 ## Setup/Installation Requirements
