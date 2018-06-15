@@ -26,6 +26,7 @@ function getPriceOfToppings(toppings) {
             total += 3;
         }
     });
+    return total;
 }
 
 Pizza.prototype.getPrice = function() {
@@ -34,6 +35,7 @@ Pizza.prototype.getPrice = function() {
     var totalPrice = priceOfSize + priceOfToppings;
     return totalPrice;
 };
+
 
 $(document).ready(function() {
     $(".makeOrder").submit(function(event) {
@@ -45,7 +47,7 @@ $(document).ready(function() {
             toppingsOfPizza.push(individualToppings);
           });
         var pizzaOrder = new Pizza(sizeofPizza, toppingsOfPizza)
-        console.log(pizzaOrder);
-        
+
+        var finalPrice = pizzaOrder.getPrice();
     })
 });
